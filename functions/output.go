@@ -10,7 +10,7 @@ import (
 
 func AsciiOutput(args []string) {
 	if len(args) < 2 {
-		fmt.Println("Usage: go run . [OPTION] [STRING]\nEX: go run . --color=<color> <substring to be colored> 'something' ")
+		fmt.Println("Usage: go run . [OPTION] [STRING] [BANNER]\nEX: go run . --output=<fileName.txt> something standard")
 		return
 	}
 	output := args[0]  // Expected to be the output option (e.g., --output=<fileName.txt>)
